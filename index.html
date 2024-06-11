@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <title>Document</title>
+</head>
+<body>
+    <div class="mobileNavBar">
+        <div class="mobileNavHomeContainer">
+            <img class="mobileNavHome" src="JB logo no text.png">
+        </div>
+        <div class="otherIcons">
+            <img class="portfolioIcon" src="portfolioIcon.png">
+            <img class="whyMeIcon" src="whyMeIcon.png">
+        </div>
+    </div>
+    <div class="navigationBar">
+        <div class="logoContainer">
+            <img class="logo" src="JB logo no text.png">
+        </div>
+        <div class="navButtonsContainer">
+            <button class="navButtons navButtonsOne">Home</button>
+            <button class="navButtons navButtonsTwo">Portfolio</button>
+            <button class="navButtons navButtonsThree">Why Me?</button>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+<style>
+
+    html {
+        font-size: 16px;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        transition: .5s;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        overflow-x: hidden;
+    }
+
+
+    .navigationBar {
+        position: fixed;
+        height: 70px;
+        width: 100%;
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+        display: flex;
+        z-index: 100;
+        background-color: white;
+    }
+    .logoContainer {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .logo {
+        height: 90%;
+        margin-left: 1rem;
+    }
+    .navButtonsContainer {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8rem;
+        position: absolute;
+        right: 2rem;
+    }
+    .navButtons {
+        background: none;
+        border: none;
+        font-size: 1.25rem;
+        font-family: poppins;
+        transition: transform .5s;
+        transform-origin: center;
+        position: relative;
+    }
+    .navButtons:hover {
+        cursor: pointer;
+    }
+    .navButtons:hover.navButtons::after {
+        transform: scale(1);
+    }
+    .navButtons::after {
+        content: "";
+        background-color: black;
+        height: 3px;
+        width: 100%;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        transform: scale(0);
+        transition: .5s;
+    }
+    .mobileNavBar {
+        position: fixed;
+        bottom: 20px;
+        width: 90%;
+        height: 4rem;
+        background-color: rgb(255, 255, 255);
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+        border-radius: 20px;
+        opacity: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .mobileNavHomeContainer {
+        height: 5rem;
+        width: 5rem;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+    }
+    .mobileNavHome {
+        height: 90%;
+    }
+    .otherIcons {
+        display: flex;
+        width: 65%;
+        height: 100%;
+        position: absolute;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .portfolioIcon {
+        height: 50%;
+        opacity: .5;
+    }
+    .whyMeIcon {
+        height: 50%;
+        opacity: .5;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    @media (max-width: 900px) {
+        .navButtonsContainer {
+            gap: 6rem;
+        }
+    }
+    @media (max-width: 735px) {
+        .navButtonsContainer {
+            gap: 4rem;
+        }
+    }
+    @media (max-width: 600px) {
+        .navButtonsContainer {
+            gap: 2rem;
+        }
+        .navButtons {
+            font-size: 1.2rem;
+        }
+    }
+    @media (max-width: 500px) {
+        .navButtonsContainer {
+            opacity: 0;
+            user-select: none;
+        }
+        .navigationBar {
+            opacity: 0;
+        }
+        .mobileNavBar {
+            opacity: 1;
+        }
+    }
+
+
+
+
+
+ 
+
+
+
+
+
+   
+   
+    
+
+
+   
+
+ 
+
+
+
+   
+  
+
+
+
+
+
+
+</style>
+
+
+
+
+
+
+
+</body>
+</html>
